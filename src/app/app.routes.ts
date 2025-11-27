@@ -1,8 +1,9 @@
 import { Routes } from '@angular/router';
 import { TelaInicialComponent } from './tela-inicial/tela-inicial.component';
-import { Component } from '@angular/core';
+import { ResultadoBuscaComponent } from './resultado-busca/resultado-busca.component';
 
 export const routes: Routes = [
 
-  {path: 'tela-inicial', component: TelaInicialComponent }
+  {path: '', component: TelaInicialComponent },
+  {path: 'resultado-busca', component: ResultadoBuscaComponent}
 ];

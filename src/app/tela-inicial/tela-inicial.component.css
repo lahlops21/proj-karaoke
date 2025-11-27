@@ -79,7 +79,7 @@
 
 .logo-titulo {
   font-family: 'Fugaz One', cursive;
-  font-size: 42px;
+  font-size: 52px;
   margin: 0;
   line-height: 1.1;
   display: flex;
@@ -215,29 +215,16 @@
 
 /* Dicas de busca - mobile first */
 .dicas-busca {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  gap: 12px;
-  flex-wrap: wrap;
   animation: fadeIn 0.6s ease-out 0.4s backwards;
-  padding: 0 8px;
 }
 
-.dica-item {
+.dica-texto {
   font-family: 'Poppins', sans-serif;
   font-size: 14px;
-  color: #EF33B3;
-  font-weight: 500;
-  padding: 8px 16px;
-  background: rgba(239, 51, 179, 0.1);
-  border-radius: 20px;
-  border: 1px solid rgba(239, 51, 179, 0.3);
-}
-
-.dica-separador {
-  color: #555555;
-  font-size: 12px;
+  color: #888888;
+  text-align: center;
+  font-weight: 400;
+  line-height: 1.5;
 }
 
 /* Efeito de fundo - simplificado para mobile */
@@ -272,7 +259,7 @@
   }
 
   .logo-titulo {
-    font-size: 56px;
+    font-size: 68px;
     flex-direction: row;
     gap: 8px;
   }
@@ -332,7 +319,7 @@
 /* Desktop - 1024px+ */
 @media (min-width: 1024px) {
   .logo-titulo {
-    font-size: 72px;
+    font-size: 84px;
   }
 
   .letra:hover {
@@ -380,7 +367,7 @@
 /* Ajuste para iPhones pequenos */
 @media (max-width: 375px) {
   .logo-titulo {
-    font-size: 36px;
+    font-size: 44px;
   }
 
   .subtitulo {

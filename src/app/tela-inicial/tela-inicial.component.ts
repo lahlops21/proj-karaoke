@@ -22,9 +22,9 @@ export class TelaInicialComponent {
   ];
   private placeholderIndex: number = 0;
 
-  constructor(private router: Router) {
-    this.animarPlaceholder();
-  }
+  constructor(public router: Router) {
+  this.animarPlaceholder();
+}
 
   private animarPlaceholder(): void {
     const textoCompleto = this.placeholders[this.placeholderIndex];
@@ -60,9 +60,7 @@ export class TelaInicialComponent {
   buscar(): void {
     if (this.termoBusca.trim()) {
       // Navegar para página de resultados com o termo de busca
-      this.router.navigate(['/resultados'], {
-        queryParams: { termo: this.termoBusca, tipo: 'geral' }
-      });
+      this.router.navigate(['/resultado-busca']);
     }
   }
 
