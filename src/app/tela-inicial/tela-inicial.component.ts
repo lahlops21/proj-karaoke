@@ -60,7 +60,9 @@ export class TelaInicialComponent {
   buscar(): void {
     if (this.termoBusca.trim()) {
       // Navegar para página de resultados com o termo de busca
-      this.router.navigate(['/resultado-busca']);
+      this.router.navigate(['/resultado-busca'], {
+        queryParams:{ termo: this.termoBusca.trim()}
+      });
     }
   }
 

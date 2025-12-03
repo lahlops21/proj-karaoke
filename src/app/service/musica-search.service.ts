@@ -36,8 +36,7 @@ export class MusicaService {
             .set('titulo', titulo.trim());
 
         return this.httpClient.get<MusicaSearch[]>(
-            `${this.apiUrl}/musicas/search`,
-            { params }
+            `${this.apiUrl}/musicas/search?titulo=${titulo.trim()}`,
         );
     }
 
